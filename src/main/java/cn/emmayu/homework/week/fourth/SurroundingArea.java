@@ -2,12 +2,13 @@ package cn.emmayu.homework.week.fourth;
 
 public class SurroundingArea {
 
-    public static boolean[][] b;
-    public static int row;
-    public static int column;
-    public static char[][] g;
-    public static int[] l = new int[]{-1, 1, 0, 0};
-    public static int[] r = new int[]{0, 0, -1, 1};
+    private boolean[][] b;
+    private int row;
+    private int column;
+    private char[][] g;
+    private int[] l = new int[]{-1, 1, 0, 0};
+    private int[] r = new int[]{0, 0, -1, 1};
+
 
     public void solve(char[][] board) {
         row = board.length;
@@ -44,7 +45,7 @@ public class SurroundingArea {
 
     }
 
-    public static void dfs(int i, int j) {
+    public void dfs(int i, int j) {
         for (int p = 0; p < 4; p++) {
             int d = i + l[p];
             int f = j + r[p];

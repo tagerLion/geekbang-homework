@@ -2,7 +2,8 @@ package cn.emmayu.homework.week.fourth;
 
 public class Bst {
 
-    int num = 0;
+    private int num = 0;
+
 
     public TreeNode convertBST(TreeNode root) {
         if (root == null) return null;
@@ -12,6 +13,7 @@ public class Bst {
         convertBST(root.left);
         return root;
     }
+
 
     public class TreeNode {
         int val;
